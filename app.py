@@ -4,6 +4,42 @@ import streamlit as st
 
 df = pd.read_csv('vehicles_us.csv')
 
+st.header('Vehicle types by price')
+#create a plotly histogram figure
+fig_vt_by_p = px.histogram(df, x='price', color='type')
+#display the figure with streamlit
+fig_vt_by_p.show()
+st.write(fig_vt_by_p)
+
+st.header('Price Vs Odometer')
+fig_odo_vs_p = px.scatter(df, x="odometer", y="price", 
+                 labels={"odometer": "Odometer Reading (miles)", "price": "Price ($)"},
+                 hover_data=["model", "model_year", "condition"])
+#fig_odo_vs_p.show()
+st.write(fig_odo_vs_p)
+
+fig_transmission = px.histogram(df, x="transmission", 
+                   title="Transmission Type Distribution",
+                   labels={"transmission": "Transmission Type", "count": "Count"},
+                   category_orders={"transmission": ["automatic", "manual"]})
+
+fig_transmission.show()
+st.write(fig_transmission)
+
+st.header('Price Vs Odometer')
+fig_odo_vs_year_vs_p = px.scatter(df, x="odometer", y="price", 
+                 labels={"odometer": "Odometer Reading (miles)", "price": "Price ($)"},
+                 hover_data=["model", "model_year", "condition"])
+fig_odo_vs_year_vs_p.show()
+st.write(fig_odo_vs_year_vs_p)
+
+fig_fuel_type = px.histogram(df, x="fuel", 
+                   title="Fuel Type Distribution",
+                   labels={"fuel": "Fuel Type", "count": "Count"},
+                   category_orders={"fuel": ["gas", "diesel"]})
+
+fig_fuel_type.show()
+st.write(fig_fuel_type)
 
 
 
