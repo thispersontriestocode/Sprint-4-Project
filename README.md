@@ -3,39 +3,30 @@
 
 Page URL = https://sprint-4-project-0cmz.onrender.com
 
-Random Event Simulator
+                        Random Event Simulator
 
 This project is a tool to simulate random events, specifically focused on vehicle data. 
 It provides a interactive visualization of various aspects of vehicle data, including price, 
 odometer reading, transmission type, fuel type, and vehicle type.
 
-Methods and Libraries Used
+                    Methods and Libraries Used
 
 This project utilizes the following libraries:
-
 Plotly: For creating interactive and visually appealing plots and charts.
-
 SciPy: For performing scientific and statistical computations.
-
 Streamlit: For building a user-friendly and interactive web application.
-
 Pandas: For data manipulation and analysis.
 
-Features
+                            Features
 
 The project includes the following features:
-
 A histogram showing the distribution of vehicle types vs price.
-
 A histogram showing the distribution of transmission types.
-
 A histogram showing the distribution of fuel types.
-
 A scatterplot showing the relationship between price and odometer reading.
-
 An interactive histogram showing the price distribution between fuel types.
 
-Live Demo
+                            Live Demo
 
 You can try out the project live at: https://sprint-4-project-0cmz.onrender.com
 
