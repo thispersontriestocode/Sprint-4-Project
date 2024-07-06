@@ -36,6 +36,11 @@ fig_fuel_type = px.histogram(df, x="fuel",
 
 st.write(fig_fuel_type)
 
+st.header('Year Vs Odometer')
+fig_odo_vs_year= px.scatter(df, x="odometer", y="model_year", 
+                 labels={"odometer": "Odometer Reading (miles)", "model_year": "Year"},
+                 hover_data=["model", "price", "condition"])
+st.write(fig_odo_vs_year)
 
 
 st.header('Compare price distribution between fuel types')
