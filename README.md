@@ -1,7 +1,10 @@
 # Sprint-4-Project
- Sprint 4 Project for Triple Ten Data Science/n
-Page URL = https://sprint-4-project-0cmz.onrender.com/n
+ Sprint 4 Project for Triple Ten Data Science
+
+Page URL = https://sprint-4-project-0cmz.onrender.com
+
 Random Event Simulator
+
 This project is a tool to simulate random events, specifically focused on vehicle data. It provides a interactive visualization of various aspects of vehicle data, including price, odometer reading, transmission type, fuel type, and vehicle type.
 
 Methods and Libraries Used
